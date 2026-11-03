@@ -30,49 +30,69 @@ html[data-view=mobile] .tip-tabs-label{margin:16px 0 7px;font-size:.82rem}
 <section id="news" aria-labelledby="news-heading"><div class="intro"><div class="heading-row"><h2 id="news-heading">오늘의 AI 브리핑</h2><span class="badge">주요 소식 5건</span></div><p>관심 있는 소식을 펼쳐 발표 내용과 함께 볼 점을 확인하세요.</p></div>
 <details class="item"><summary><span class="num">01</span><span><span class="meta">Microsoft · 11월 2일 · AI 개발</span><h3>코딩 에이전트가 빨라질수록 명세와 검증이 중요해진다</h3></span></summary><div class="detail"><p><strong>어떤 소식인가요?</strong> Microsoft의 Copilot Cowork 개발팀이 에이전트로 작업을 병렬화하며 얻은 교훈을 공유했습니다. <br>팀은 작업 범위, 성공 기준, 기존에 깨뜨리면 안 되는 동작을 명세에 먼저 적고 각 에이전트에 좁은 작업을 맡겼다고 설명합니다.</p><p><strong>함께 볼 점</strong> 기사에서 소개한 대량의 PR 수는 Microsoft 사례의 측정치입니다. 건수 자체보다 테스트가 실제로 실패를 잡는지 확인하고, 중요한 변경은 사람이 검토하도록 한 점이 실무에 더 가깝습니다.</p><p><strong>업무에 연결하면</strong> 먼저 작은 작업 하나에 ‘무엇을 바꾸는가·어떻게 검증하는가·무엇은 유지하는가’를 적어 보세요. AI가 낸 변경은 기존 리뷰와 테스트 절차를 거쳐야 합니다.</p><a href="https://commandline.microsoft.com/how-we-built-copilot-cowork-python-to-rust-migration/">원문 읽기 ↗</a></div></details>
 <details class="item"><summary><span class="num">02</span><span><span class="meta">Anthropic · 11월 2일 · Claude API</span><h3>긴 대화의 요청량을 줄이는 message threads 베타</h3></span></summary><div class="detail"><p><strong>어떤 소식인가요?</strong> Anthropic은 Messages API에서 대화 상태를 서버에 보관하는 message threads 베타를 공개했습니다. <br>이후 요청에는 새 메시지만 보내는 방식으로 긴 대화나 에이전트 반복 작업의 요청 크기와 첫 토큰까지의 시간을 줄이는 것이 목적입니다.</p><p><strong>함께 볼 점</strong> 스레드는 마지막 요청 5분 뒤 만료되며, 마지막 사용 후 최대 1시간 이내에 삭제된다고 안내합니다. <br>API 베타 기능이므로 일반 Claude 화면이나 사내 환경에 자동 적용된다는 뜻은 아닙니다.</p><p><strong>업무에 연결하면</strong> System Engineering이나 도구를 연동하는 팀은 긴 대화 이력을 매번 재전송하는 구조와 비교해 볼 수 있습니다. 도입 전 데이터 보관 조건, 인증, 비용과 SDK 지원 여부를 확인하세요.</p><a href="https://platform.claude.com/docs/en/release-notes/overview#november-2-2026">원문 읽기 ↗</a></div></details>
-<details class="item"><summary><span class="num">03</span><span><span class="meta">Anthropic · 11월 2일 · AI 보안</span><h3>AI 응답이 지정된 모델에서 나왔는지 증명하는 연구</h3></span></summary><div class="detail"><p><strong>어떤 소식인가요?</strong> Anthropic 연구진은 AI 서비스가 지정된 모델로 추론을 수행했는지 확인하기 위한 암호학적 검증 기법의 연구 진척을 발표했습니다. <br>응답만 읽어서는 제공자가 실제로 어떤 모델을 사용했는지 확실히 알기 어렵다는 문제에서 출발합니다.</p><p><strong>함께 볼 점</strong> 이는 연구 결과이며 현재 사용하는 모든 AI 서비스에 검증 기능이 제공된다는 발표는 아닙니다. 모델의 실행을 검증하는 문제와 답변 내용의 정확성은 별도로 봐야 합니다.</p><p><strong>업무에 연결하면</strong> 사내·외부 AI를 비교할 때 모델 이름뿐 아니라 실행 환경과 제공자의 설명을 확인하는 계기로 삼을 수 있습니다. 기술적 적용 가능성은 원문과 별도 검증이 필요합니다.</p><a href="https://www.anthropic.com/research/provable-inference">원문 읽기 ↗</a></div></details>
+<details class="item"><summary><span class="num">03</span><span><span class="meta">OpenAI · 11월 2일 · AI 인프라</span><h3>AI 데이터센터 전력 수요를 조절하는 Grid Protectors 구상</h3></span></summary><div class="detail"><p><strong>어떤 소식인가요?</strong> OpenAI는 향후 컴퓨팅 캠퍼스에서 전력망 부담이 커질 때 전력 수요를 줄이는 방안을 전력회사 등과 추진하겠다고 발표했습니다.</p><p><strong>함께 볼 점</strong> 이는 향후 시설에 관한 계획입니다. 실제 효과와 전기요금에 미치는 영향은 지역별 계약과 운영 결과를 확인해야 합니다.</p><p><strong>업무에 연결하면</strong> AI 인프라를 볼 때 칩 성능뿐 아니라 전력 공급과 수요 조절도 함께 살펴볼 만합니다. 반도체 설계에 미치는 영향은 별도의 분석이 필요합니다.</p><a href="https://openai.com/index/grid-protectors-program/">원문 읽기 ↗</a></div></details>
 <details class="item"><summary><span class="num">04</span><span><span class="meta">OpenAI · 11월 2일 · AI 평가</span><h3>일상 과제로 AI 성능을 살펴보는 LifeVal</h3></span></summary><div class="detail"><p><strong>어떤 소식인가요?</strong> OpenAI는 사람들이 일상에서 도움을 원하는 과제를 바탕으로 AI 모델을 평가하는 LifeVal을 소개했습니다. <br>육아, 교육, 가계 관리, 쇼핑과 공공서비스 이용처럼 실제 생활에서 마주하는 작업을 포함합니다.</p><p><strong>함께 볼 점</strong> 공급자가 설계한 평가 결과는 모델 비교의 한 자료이지만, 회사의 설계·지원 업무에서 같은 성능을 보장하지는 않습니다. 과제 구성과 평가 방법을 함께 읽어야 합니다.</p><p><strong>업무에 연결하면</strong> 우리 업무에서도 추상적인 모델 순위보다 실제로 반복하는 작업 몇 개를 정해 보고, 답변의 정확성과 확인 시간을 함께 비교해 보는 접근이 유용합니다.</p><a href="https://openai.com/index/lifeval/">원문 읽기 ↗</a></div></details>
 <details class="item"><summary><span class="num">05</span><span><span class="meta">Google · 10월 28일 · 모델</span><h3>Gemini 4 Carbon 발표, 초기 이용은 제한적으로</h3></span></summary><div class="detail"><p><strong>어떤 소식인가요?</strong> Google은 코딩, 장시간 작업, 사이버 보안 분야의 성능을 강조한 Gemini 4 Carbon을 발표했습니다. <br>초기에는 선별된 보안 담당자에게 우선 제공하고, 피드백을 살펴보며 접근을 확대하겠다는 계획입니다.</p><p><strong>함께 볼 점</strong> 성능 수치는 발표한 평가 조건에 따른 것이며, 일반 개발자나 조직에 즉시 제공된다는 뜻은 아닙니다. 발표는 지난주 소식이지만 실무 접근 조건이 중요해 함께 골랐습니다.</p><p><strong>업무에 연결하면</strong> 새 모델을 기다릴 때는 벤치마크 순위와 함께 현재 이용 가능 여부, 처리할 수 있는 자료의 범위, 비용과 사내 보안 정책을 같이 확인하세요.</p><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">원문 읽기 ↗</a></div></details><p class="muted">11월 3일 확인한 자료를 바탕으로 작성했습니다. 발행 전 새 소식과 원문 변경 여부를 다시 확인합니다.</p></section>
-<section id="tips" aria-labelledby="tips-heading" hidden><div class="intro"><div class="heading-row"><h2 id="tips-heading">오늘의 AI 활용 팁</h2><span class="badge">이번 주</span></div><p>공통과 각 팀의 활용법을 골라보세요.<br>Deep Dive는 매주 한 편씩 다룹니다.</p></div><p class="tip-tabs-label">분야를 선택해 읽어보세요</p><nav class="tip-tabs" aria-label="활용 팁 구분"><button type="button" aria-pressed="true" aria-controls="tip-common">Common</button><button type="button" aria-pressed="false" aria-controls="tip-digital">Digital <span>Eng</span></button><button type="button" aria-pressed="false" aria-controls="tip-phy">PHY <span>Eng</span></button><button type="button" aria-pressed="false" aria-controls="tip-system">System <span>Eng</span></button><button type="button" aria-pressed="false" aria-controls="tip-support">HR</button><button type="button" aria-pressed="false" aria-controls="tip-deep">Deep <span>Dive</span></button></nav><article id="tip-common"><span class="tip-level">기초</span><h2>질문에 맥락을 더하면 답이 달라집니다</h2>
-<p>AI에게 ‘설명해 줘’라고만 하면 답변의 방향을 AI가 정해야 합니다. </p><p>누구에게 전달할 내용인지와 무엇을 하려는지 먼저 알려주면, 답변을 처음부터 다시 고치는 일을 줄일 수 있습니다.</p>
-<h3>이렇게 물어보세요</h3><div class="example">반도체 비전공 신입 직원에게 인터페이스 IP를 소개하려고 합니다.
-역할과 필요한 이유를 쉬운 비유 하나와 함께 5문장으로 설명해 주세요.
-전문 용어는 처음 나올 때 짧게 풀고, 확실하지 않은 내용은 구분해 주세요.</div>
-<h3>답변을 받은 다음에는</h3><p>대상자가 이해할 수 있는지 먼저 읽어 봅니다. 설명이 길면 ‘핵심만 세 문장으로’, 비유가 어색하면 ‘비유 없이 다시’라고 이어서 요청해 보세요. 기술적 내용은 담당자가 확인합니다.</p>
-<section class="glossary"><h3>용어 정리</h3><dl><dt>프롬프트</dt><dd>AI에게 전달하는 질문이나 작업 지시입니다.</dd><dt>인터페이스 IP</dt><dd>칩이 다른 장치와 신호를 주고받는 데 사용하는 재사용 가능한 설계 자산입니다.</dd></dl></section></article>
-<article id="tip-digital" hidden><span class="tip-level">중급</span><h2>RTL을 설명받을 때 동작과 근거를 분리하기</h2>
-<p>처음 보는 RTL을 AI에게 맡길 때는 ‘무슨 회로인지’만 묻기보다 신호의 갱신 조건과 코드 근거를 함께 요구해 보겠습니다. </p><p>그다음 reset과 enable이 겹치는 경우를 따로 질문하면 빠진 조건을 찾기 쉽습니다.</p>
-<h3>1. 신호와 조건부터 정리</h3><div class="example">다음 RTL을 보고 레지스터의 갱신 조건, reset 조건, 값 유지 조건을 표로 정리해 주세요.
-각 설명 옆에 근거가 되는 코드를 표시하고, 코드만으로 알 수 없는 요구사항은 질문으로 남겨 주세요.
-[검토할 RTL]</div>
-<h3>2. 경계 조건을 다시 질문</h3><div class="example">reset과 enable이 동시에 활성화되면 어떤 동작이 우선하나요?
-클록과 reset의 관계도 코드 근거를 들어 설명해 주세요.</div>
-<p>답변은 코드 리뷰의 출발점입니다. reset 극성·비동기 여부와 조건의 우선순위는 원본 코드와 시뮬레이션에서 직접 확인하세요. 업무 코드를 입력할 때는 사용 중인 도구의 자료 취급 기준을 따릅니다.</p>
-<section class="glossary"><h3>용어 정리</h3><dl><dt>RTL</dt><dd>레지스터와 데이터 흐름을 중심으로 디지털 회로를 기술하는 방식입니다.</dd><dt>Reset</dt><dd>회로를 정해진 초기 상태로 만드는 신호 또는 동작입니다.</dd></dl></section></article>
-<article id="tip-phy" hidden><span class="tip-level">기초</span><h2>측정값을 비교할 때 조건부터 정리하기</h2>
-<p>측정값 두 개가 다르다고 해서 곧바로 회로 특성이 달라졌다고 판단할 수는 없습니다. 온도나 전압, 측정 방식이 달랐을 수 있기 때문입니다. </p><p>AI에게 값을 정리시킬 때는 비교 조건도 함께 남기도록 요청해 보세요.</p>
-<h3>연습해 보기</h3><p>다음 숫자는 설명을 위한 예시입니다.</p><div class="example">아래 데이터를 온도와 지연 시간으로 나눠 표로 정리해 주세요.
-가장 큰 값과 작은 값을 각각 표시하되, 원인이나 합격 여부는 판단하지 마세요.
-25°C: 82 ps / 85°C: 91 ps / -40°C: 77 ps</div>
-<h3>어디를 볼까요?</h3><p>표에서 온도와 숫자가 짝을 유지하는지, 단위가 바뀌지 않았는지 확인합니다. 예시의 최대값은 91 ps, 최소값은 77 ps입니다. 실제 측정 결과를 비교할 때는 공정, 전압, 온도와 측정 조건을 함께 확인해야 합니다.</p>
-<section class="glossary"><h3>용어 정리</h3><dl><dt>PVT</dt><dd>공정(Process), 전압(Voltage), 온도(Temperature)를 묶어 부르는 말입니다.</dd><dt>ps</dt><dd>피코초. 1조 분의 1초입니다.</dd></dl></section></article>
-<article id="tip-system" hidden><span class="tip-level">고급</span><h2>FW 초기화 경로를 나눠 읽고 다시 합치기</h2>
-<p>FW를 처음 볼 때는 클록 설정, 주변장치 초기화, 오류 처리 경로를 한 번에 파악하기 어렵습니다. </p><p>AI 에이전트 세 개에 서로 다른 범위를 읽게 하고, 마지막에 호출 순서와 빠진 부분을 합쳐 보겠습니다.</p>
-<h3>작업을 나누는 방법</h3><ol class="steps"><li>사용이 허용된 프로젝트에서 읽기 전용 작업 범위를 정합니다.</li><li>세 세션에 각각 클록, 주변장치, 오류 처리 경로를 맡깁니다. 파일 경로와 함수 이름을 함께 보고하게 합니다.</li><li>각 결과를 모아 실제 진입 함수의 호출 순서와 대조하고, 충돌하는 설명을 다시 확인합니다.</li></ol>
-<h3>주변장치 담당 세션에 넣을 질문</h3><div class="example">프로젝트를 읽기 전용으로 살펴보고 주변장치 초기화 경로를 찾아 주세요.
-진입 함수 → 호출 함수 → 설정되는 주변장치 순서로 정리하고 각 항목에 파일 경로와 코드 근거를 붙여 주세요.
-파일을 수정하거나 명령을 실행하지 말고, 코드만으로 확인되지 않는 순서는 추측하지 마세요.</div>
-<p>병렬로 나눠 읽으면 함수 간 의존관계를 놓칠 수 있습니다. 마지막에는 실행 순서와 초기화 실패 시 동작을 코드와 실제 테스트 결과로 확인하세요.</p>
-<section class="glossary"><h3>용어 정리</h3><dl><dt>FW</dt><dd>장치의 동작을 제어하는 펌웨어입니다.</dd><dt>AI 에이전트</dt><dd>목표에 따라 여러 단계를 수행하고 설정된 도구를 사용할 수 있는 AI 시스템입니다.</dd></dl></section></article>
-<article id="tip-support" hidden><span class="tip-level">중급</span><h2>공지문을 쓰기 전에 빠진 정보부터 찾기</h2>
-<p>공지 초안을 바로 쓰게 하면 날짜나 장소가 빠진 상태에서도 그럴듯한 문장이 나올 수 있습니다. </p><p>먼저 필요한 정보를 점검하고, 확인한 내용만 넣어 작성하는 두 단계로 나눠 보겠습니다.</p>
-<h3>1. 먼저 확인할 항목 찾기</h3><div class="example">사내 AI 교육을 공지하려고 합니다. 대상은 전 직원이고 일정은 11월 중입니다.
-공지 전에 확인할 항목과 그 이유를 표로 정리해 주세요. 정해지지 않은 날짜나 장소는 만들지 마세요.</div>
-<p>예를 들어 정확한 일시, 장소 또는 접속 방법, 신청 여부, 담당자 연락처가 빠졌는지 확인할 수 있습니다.</p>
-<h3>2. 확인한 정보로 초안 작성</h3><div class="example">확인한 내용만 사용해 직원용 공지 초안을 작성해 주세요.
-아직 정해지지 않은 항목은 [확인 필요]로 남겨 주세요.
-[확인한 교육 정보]</div>
-<p>보내기 전에는 일시와 참석 대상, 신청 방법을 담당자가 확인합니다. 문장이 매끄럽다는 이유만으로 사실 확인을 생략하지 않는 것이 핵심입니다.</p></article>
+<section id="tips" aria-labelledby="tips-heading" hidden><div class="intro"><div class="heading-row"><h2 id="tips-heading">오늘의 AI 활용 팁</h2><span class="badge">이번 주</span></div><p>공통과 각 팀의 활용법을 골라보세요.<br>Deep Dive는 매주 한 편씩 다룹니다.</p></div><p class="tip-tabs-label">분야를 선택해 읽어보세요</p><nav class="tip-tabs" aria-label="활용 팁 구분"><button type="button" aria-pressed="true" aria-controls="tip-common">Common</button><button type="button" aria-pressed="false" aria-controls="tip-digital">Digital <span>Eng</span></button><button type="button" aria-pressed="false" aria-controls="tip-phy">PHY <span>Eng</span></button><button type="button" aria-pressed="false" aria-controls="tip-system">System <span>Eng</span></button><button type="button" aria-pressed="false" aria-controls="tip-support">HR</button><button type="button" aria-pressed="false" aria-controls="tip-deep">Deep <span>Dive</span></button></nav><article id="tip-common"><span class="tip-level">기초</span><h2>회의 메모를 실행할 일 목록으로 바꾸기</h2>
+<p>회의가 끝나면 결정된 내용과 해야 할 일이 메모 속에 섞여 있습니다. AI에게 요약만 요청하기보다, 누가 무엇을 언제까지 해야 하는지 별도로 뽑아 달라고 해보세요.</p>
+<h3>이렇게 요청해 보세요</h3><div class="example">아래 회의 메모에서 후속 조치를 추출해 주세요.
+각 항목을 작업 내용 | 담당자 | 기한 | 관련 결정사항 | 확인할 점으로 정리해 주세요.
+결정된 사항과 제안만 나온 사항을 구분하고, 담당자나 기한이 없으면 ‘확인 필요’로 표시해 주세요.
+같은 작업은 합치되, 누가 맡을지 추측하지 마세요.
+
+[회의 메모]</div>
+<h3>결과를 확인할 때</h3><p>원문에 없던 담당자와 날짜가 들어갔는지, 제안이 결정사항으로 바뀌지 않았는지 확인합니다. 확인한 목록은 담당자에게 공유하거나 다음 회의의 진행 현황 점검에 활용할 수 있습니다.</p>
+<section class="glossary"><h3>용어 정리</h3><dl><dt>후속 조치</dt><dd>회의에서 정한 내용에 따라 담당자가 이어서 처리할 일입니다.</dd></dl></section></article>
+<article id="tip-digital" hidden><span class="tip-level">중급</span><h2>인터페이스 명세에서 테스트 케이스 초안 만들기</h2>
+<p>새 기능의 검증을 시작할 때 정상 요청만 먼저 떠올리기 쉽습니다. 인터페이스 명세에서 요청과 응답의 조건을 뽑고, 경계 상황까지 테스트 항목으로 확장해 보겠습니다.</p>
+<h3>1. 명세에서 확인할 조건 뽑기</h3><div class="example">아래 인터페이스 명세를 읽고 요청 수락 조건, 응답 조건, 대기 중 동작, reset 동작을 정리해 주세요.
+각 항목에 원문 근거를 붙이고 명세에서 확인할 수 없는 동작은 질문으로 남겨 주세요.
+
+[인터페이스 명세]</div>
+<h3>2. 테스트 케이스로 확장하기</h3><div class="example">정리한 조건을 바탕으로 테스트 케이스를 작성해 주세요.
+각 케이스는 ID | 초기 조건 | 입력 순서 | 기대 결과 | 명세 근거로 정리해 주세요.
+정상 요청 외에 연속 요청, 응답 대기, 요청 대기 중 reset도 검토해 주세요.
+명세가 허용하거나 정의하지 않은 동작은 임의로 정하지 말고 확인 질문으로 표시해 주세요.</div>
+<h3>검토 포인트</h3><p>예를 들어 backpressure가 허용되는 인터페이스라면 수신 준비가 되지 않은 동안 요청 신호와 데이터가 어떻게 유지돼야 하는지 명세와 대조합니다. AI가 추가한 기대 결과는 검증 담당자가 명세를 확인한 뒤 테스트 플랜에 반영합니다.</p>
+<section class="glossary"><h3>용어 정리</h3><dl><dt>Backpressure</dt><dd>수신 측이 준비되지 않아 송신 측의 전송을 기다리게 하는 흐름 제어입니다.</dd><dt>Reset</dt><dd>회로를 정해진 초기 상태로 만드는 신호 또는 동작입니다.</dd></dl></section></article>
+<article id="tip-phy" hidden><span class="tip-level">중급</span><h2>PVT 결과에서 규격에 가까운 조건 찾기</h2>
+<p>시뮬레이션 결과가 여러 corner에 걸쳐 있으면 규격을 벗어난 항목뿐 아니라 여유가 작은 조건도 함께 살펴야 합니다. 결과표와 규격을 함께 주고 비교표를 만들어 보겠습니다.</p>
+<h3>이렇게 요청해 보세요</h3><div class="example">아래 시뮬레이션 결과를 규격과 비교해 주세요.
+항목 | process corner | 전압 | 온도 | 측정 조건 | 결과 | 규격 | 여유 또는 초과량 순서로 정리해 주세요.
+상한 규격은 ‘상한 − 결과’, 하한 규격은 ‘결과 − 하한’으로 여유를 계산하고 음수인 경우 초과로 표시해 주세요.
+단위나 비교 방향, 측정 조건이 불명확하면 판정하지 말고 ‘확인 필요’로 남겨 주세요.
+표에 없는 고장 원인은 추측하지 마세요.
+
+[규격과 측정 조건]
+[corner별 결과]</div>
+<h3>결과를 확인할 때</h3><p>AI가 계산한 여유는 원본 데이터와 계산식으로 다시 확인합니다. 같은 항목이라도 부하, 입력 조건이나 단위가 다르면 단순 비교하지 않습니다. 여유가 작은 조건은 파형과 해당 시뮬레이션 설정을 함께 살펴보세요.</p>
+<section class="glossary"><h3>용어 정리</h3><dl><dt>PVT</dt><dd>공정(Process), 전압(Voltage), 온도(Temperature)를 묶어 부르는 말입니다.</dd><dt>Corner</dt><dd>공정·전압·온도 등의 특정 조합으로 정의한 분석 조건입니다.</dd></dl></section></article>
+<article id="tip-system" hidden><span class="tip-level">중급</span><h2>Bring-Up 로그로 다음 확인 순서 정하기</h2>
+<p>보드가 예상대로 부팅되지 않을 때 로그의 마지막 줄만 보면 앞 단계에서 이미 문제가 시작된 경우를 놓칠 수 있습니다. 기대 순서와 실제 로그를 나란히 놓고, 확인된 사실과 가설을 분리해 보겠습니다.</p>
+<h3>준비할 자료</h3><p>기대하는 초기화 순서, 시간 정보가 포함된 로그, 확인 가능한 FW·보드 버전을 함께 준비합니다. 정상 동작 로그가 있다면 비교 자료로 추가합니다.</p>
+<h3>이렇게 요청해 보세요</h3><div class="example">아래 초기화 순서와 bring-up 로그를 비교해 주세요.
+1. 로그로 성공을 확인할 수 있는 마지막 단계와 근거
+2. 처음 이상이 나타난 시점과 관련 로그
+3. 가능한 원인별 추가 확인 방법과 필요한 자료
+를 정리해 주세요. 로그에서 확인한 사실과 가설은 분리하고, 보이지 않는 동작은 추측하지 마세요.
+추가 확인은 상태 조회 등 영향이 작은 방법부터 제안해 주세요. 실제 보드 조작이나 설정 변경은 하지 마세요.
+
+[기대 초기화 순서와 버전]
+[로그]
+[정상 로그가 있다면 추가]</div>
+<h3>결과를 확인할 때</h3><p>‘마지막 로그’가 곧 마지막 성공 단계라는 보장은 없습니다. 로그가 기록되지 않은 경로가 있는지 코드와 실제 보드 상태를 확인하고, 가설마다 레지스터 값이나 계측 결과 같은 추가 근거를 확보합니다.</p>
+<section class="glossary"><h3>용어 정리</h3><dl><dt>Bring-Up</dt><dd>새 보드나 칩을 처음 동작시키며 전원, 클록, 펌웨어와 주요 기능을 단계적으로 확인하는 과정입니다.</dd><dt>FW</dt><dd>장치의 동작을 제어하는 펌웨어입니다.</dd></dl></section></article>
+<article id="tip-support" hidden><span class="tip-level">중급</span><h2>견적서 두 건의 금액과 조건을 함께 비교하기</h2>
+<p>견적 금액이 낮아도 납기나 부가세, 유지보수 조건이 다르면 단순 비교하기 어렵습니다. 견적서에서 항목을 뽑아 같은 기준의 표로 정리하고, 빠진 조건을 공급사에 확인해 보겠습니다.</p>
+<h3>이렇게 요청해 보세요</h3><div class="example">아래 두 견적서를 비교해 주세요.
+품목과 수량, 단가, 공급가액, 부가세, 총액, 납기, 결제 조건, 유지보수 조건을 항목별로 정리해 주세요.
+견적서에 없는 항목은 ‘명시 없음’으로 표시하고 임의로 채우지 마세요.
+계산할 수 있는 합계는 계산식과 함께 별도로 표시하고, 서로 조건이 달라 직접 비교하기 어려운 항목과 공급사에 확인할 질문을 정리해 주세요.
+
+[견적서 A]
+[견적서 B]</div>
+<h3>결과를 확인할 때</h3><p>수량과 단위가 같은지, 부가세 포함 여부와 납기 기준이 같은지 원문에서 확인합니다. AI가 계산한 합계는 계산기로 다시 확인하고, 확인되지 않은 조건은 공급사에 문의한 뒤 판단합니다.</p>
+<section class="glossary"><h3>용어 정리</h3><dl><dt>공급가액</dt><dd>부가가치세를 제외한 거래 금액입니다.</dd><dt>납기</dt><dd>물품이나 서비스를 제공하기로 한 기한입니다.</dd></dl></section></article>
 <article id="tip-deep" hidden><span class="tip-level">심화</span><h2>병렬 에이전트 리뷰, 정말 도움이 되는지 비교하기</h2>
 <p>여러 에이전트에게 동시에 리뷰를 맡기면 시각은 늘어날 수 있습니다. 다만 같은 문제를 반복하거나, 작업을 나눈 탓에 전체 흐름을 놓칠 수도 있습니다. </p><p>이번에는 단독 리뷰와 병렬 리뷰를 같은 조건에서 비교해 보겠습니다.</p>
 <h3>준비할 것</h3><p>작은 코드나 문서 한 건과 사람이 미리 확인한 점검 항목을 준비합니다. 자료 사용과 에이전트 권한을 확인하고, 각 세션은 읽기 전용으로 제한합니다. tmux처럼 여러 터미널 세션을 관리하는 도구를 사용해도 좋습니다.</p>
@@ -97,7 +117,7 @@ function showPanel(id){for(const panel of panels)panel.hidden=panel.id!==id;for(
 for(const button of document.querySelectorAll('.tabs button'))button.addEventListener('click',()=>showPanel(button.getAttribute('aria-controls')));
 for(const button of document.querySelectorAll('.tip-tabs button'))button.addEventListener('click',()=>{for(const article of document.querySelectorAll('#tips > article'))article.hidden=article.id!==button.getAttribute('aria-controls');for(const tab of document.querySelectorAll('.tip-tabs button'))tab.setAttribute('aria-pressed',tab===button)});
 // The preview contains six test articles. Published articles still need an archive pipeline.
-const entries=[["tip-common", "\uc9c8\ubb38\uc5d0 \ub9e5\ub77d\uc744 \ub354\ud558\uba74 \ub2f5\uc774 \ub2ec\ub77c\uc9d1\ub2c8\ub2e4", "\uc9c8\ubb38 \uc791\uc131", "\uacf5\ud1b5"], ["tip-digital", "RTL\uc744 \uc124\uba85\ubc1b\uc744 \ub54c \ub3d9\uc791\uacfc \uadfc\uac70\ub97c \ubd84\ub9ac\ud558\uae30", "\uc124\uacc4\u00b7\uac80\uc99d", "Digital Engineering"], ["tip-phy", "\uce21\uc815\uac12\uc744 \ube44\uad50\ud560 \ub54c \uc870\uac74\ubd80\ud130 \uc815\ub9ac\ud558\uae30", "\uc124\uacc4\u00b7\uac80\uc99d", "PHY Engineering"], ["tip-system", "FW \ucd08\uae30\ud654 \uacbd\ub85c\ub97c \ub098\ub220 \uc77d\uace0 \ub2e4\uc2dc \ud569\uce58\uae30", "\uc790\ub3d9\ud654", "System Engineering"], ["tip-support", "\uacf5\uc9c0\ubb38\uc744 \uc4f0\uae30 \uc804\uc5d0 \ube60\uc9c4 \uc815\ubcf4\ubd80\ud130 \ucc3e\uae30", "\ubb38\uc11c\u00b7\uc5c5\ubb34", "\uacbd\uc601\uc9c0\uc6d0"], ["tip-deep", "\ubcd1\ub82c \uc5d0\uc774\uc804\ud2b8 \ub9ac\ubdf0, \uc815\ub9d0 \ub3c4\uc6c0\uc774 \ub418\ub294\uc9c0 \ube44\uad50\ud558\uae30", "\uc790\ub3d9\ud654", "\uacf5\ud1b5"]].map(([id,title,topic,team])=>({id,title,topic,team,date:"2026-11-04",text:document.getElementById(id).textContent}));
+const entries=[["tip-common", "\ud68c\uc758 \uba54\ubaa8\ub97c \uc2e4\ud589\ud560 \uc77c \ubaa9\ub85d\uc73c\ub85c \ubc14\uafb8\uae30", "\ubb38\uc11c\u00b7\uc5c5\ubb34", "\uacf5\ud1b5"], ["tip-digital", "\uc778\ud130\ud398\uc774\uc2a4 \uba85\uc138\uc5d0\uc11c \ud14c\uc2a4\ud2b8 \ucf00\uc774\uc2a4 \ucd08\uc548 \ub9cc\ub4e4\uae30", "\uc124\uacc4\u00b7\uac80\uc99d", "Digital Engineering"], ["tip-phy", "PVT \uacb0\uacfc\uc5d0\uc11c \uaddc\uaca9\uc5d0 \uac00\uae4c\uc6b4 \uc870\uac74 \ucc3e\uae30", "\uc124\uacc4\u00b7\uac80\uc99d", "PHY Engineering"], ["tip-system", "Bring-Up \ub85c\uadf8\ub85c \ub2e4\uc74c \ud655\uc778 \uc21c\uc11c \uc815\ud558\uae30", "\uc124\uacc4\u00b7\uac80\uc99d", "System Engineering"], ["tip-support", "\uacac\uc801\uc11c \ub450 \uac74\uc758 \uae08\uc561\uacfc \uc870\uac74\uc744 \ud568\uaed8 \ube44\uad50\ud558\uae30", "\ubb38\uc11c\u00b7\uc5c5\ubb34", "\uacbd\uc601\uc9c0\uc6d0"], ["tip-deep", "\ubcd1\ub82c \uc5d0\uc774\uc804\ud2b8 \ub9ac\ubdf0, \uc815\ub9d0 \ub3c4\uc6c0\uc774 \ub418\ub294\uc9c0 \ube44\uad50\ud558\uae30", "\uc790\ub3d9\ud654", "\uacf5\ud1b5"]].map(([id,title,topic,team])=>({id,title,topic,team,date:"2026-11-04",text:document.getElementById(id).textContent}));
 const search=document.getElementById('archive-search'),filters=document.querySelector('.filter-panel'),list=document.getElementById('archive-list'),count=document.getElementById('archive-count');
 function renderArchive(){const q=search.value.trim().toLocaleLowerCase();const selected=name=>[...filters.querySelectorAll(`input[name="${name}"]:checked`)].map(input=>input.value);const topics=selected('topic'),teams=selected('team');const results=entries.filter(entry=>(!topics.length||topics.includes(entry.topic))&&(!teams.length||teams.includes(entry.team))&&[entry.title,entry.team,entry.topic,entry.text].join(' ').toLocaleLowerCase().includes(q)).sort((a,b)=>b.date.localeCompare(a.date));list.replaceChildren();count.textContent=`${results.length}개의 팁`;for(const entry of results){const card=document.createElement('div');card.className='item';const link=document.createElement('a');link.className='archive-link';link.href=entry.page?`${entry.page}#${entry.id}`:'#tips-heading';const meta=document.createElement('span');meta.className='meta';meta.textContent=`${entry.date} · ${entry.topic} · ${entry.team}${entry.id==='tip-deep'?' · 주간 심화':''}`;const title=document.createElement('h3');title.textContent=entry.title;link.append(meta,title);if(!entry.page)link.addEventListener('click',()=>{showPanel('tips');document.querySelector(`.tip-tabs button[aria-controls="${entry.id}"]`).click()});card.append(link);list.append(card)}if(!results.length){const empty=document.createElement('p');empty.className='muted';empty.textContent='조건에 맞는 팁이 없습니다. 검색어나 필터를 바꿔 보세요.';list.append(empty)}}
 const searchToggle=document.querySelector('.search-toggle'),searchBox=document.querySelector('.search-box');
@@ -109,4 +129,4 @@ if(location.hash==='#tips-heading')showPanel('tips');
 else if(/^#tip-(common|digital|phy|system|support|deep)$/.test(location.hash)){showPanel('tips');document.querySelector(`.tip-tabs button[aria-controls="${location.hash.slice(1)}"]`)?.click()}
 </script></body></html>
 
-<!-- daily-ai-test-41628016853-1 -->
+<!-- daily-ai-test-41653006614-1 -->
